@@ -18,6 +18,14 @@ import { PedidoModule } from './pedido/pedido.module';
       autoLoadEntities: true,
       synchronize: true,
       logging: true,
+      ssl: {
+        rejectUnauthorized: false,
+      },
+      extra: {
+        ssl: {
+          rejectUnauthorized: false,
+        },
+      },
     }),
     ClienteModule,
     PessoaFisicaModule,
