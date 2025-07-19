@@ -25,11 +25,11 @@ const initialState: AppState = {
   products: [
     {
       id: "1",
-      name: "Smartphone Galaxy Pro",
+      name: "Smartphone S25",
       manufacturer: "Samsung",
       costPrice: 800,
       salePrice: 1200,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/samsung-s25.png",
     },
     {
       id: "2",
@@ -37,7 +37,7 @@ const initialState: AppState = {
       manufacturer: "Dell",
       costPrice: 2000,
       salePrice: 2800,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/dell-notebook.png",
     },
     {
       id: "3",
@@ -45,7 +45,7 @@ const initialState: AppState = {
       manufacturer: "Sony",
       costPrice: 150,
       salePrice: 250,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/fone-bluetooth.png",
     },
     {
       id: "4",
@@ -53,7 +53,7 @@ const initialState: AppState = {
       manufacturer: "LG",
       costPrice: 1500,
       salePrice: 2200,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/lg.png",
     },
     {
       id: "5",
@@ -61,7 +61,7 @@ const initialState: AppState = {
       manufacturer: "Apple",
       costPrice: 1800,
       salePrice: 2500,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/ipad-air.png",
     },
     {
       id: "6",
@@ -69,7 +69,7 @@ const initialState: AppState = {
       manufacturer: "Sony",
       costPrice: 2500,
       salePrice: 3200,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/ps5.png",
     },
   ],
 }
