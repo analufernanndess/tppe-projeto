@@ -32,3 +32,7 @@ jobs:
       - name: Rodar Lint
         run: yarn lint
         working-directory: backend
+
+      - name: Deploy to Render
+        if: github.ref == 'refs/heads/main'
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
