@@ -16,7 +16,13 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   SwaggerModule.setup('api', app, document);
 
-  app.enableCors();
+  app.enableCors({
+    origin: [
+      'https://tppe-projeto-rcq83gxy7-ana-luizas-projects-1fd78dd7.vercel.app',
+    ],
+    credentials: true,
+  });
+
   await app.listen(process.env.PORT || 3000, '0.0.0.0');
 }
 bootstrap();
