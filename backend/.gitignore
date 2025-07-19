@@ -27,6 +27,8 @@ shelved.patch
 workspace.xml
 tasks.xml
 usage.statistics.xml
+package-lock.json
+
 
 # IDE - VSCode
 .vscode/*
