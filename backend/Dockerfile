@@ -11,7 +11,7 @@ RUN yarn install --production
 RUN yarn global add @nestjs/cli
 
 # Copia o restante do código
-COPY . .
+COPY .. .
 
 # Compila o projeto
 RUN yarn build
