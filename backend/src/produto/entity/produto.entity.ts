@@ -3,15 +3,15 @@ import { PedidoProduto } from '../../pedidos-produtos/entity/pedidos-produtos.en
 
 @Entity('produtos')
 export class Produto {
-    @PrimaryGeneratedColumn()
-    id: number;
+  @PrimaryGeneratedColumn()
+  id: number;
 
-    @Column({ type: 'varchar' })
-    nome: string;
+  @Column({ type: 'varchar' })
+  nome: string;
 
-    @Column({ type: 'numeric' })
-    preco: number;
+  @Column({ type: 'numeric' })
+  preco: number;
 
-    @OneToMany(() => PedidoProduto, pedidoProduto => pedidoProduto.produto)
-    pedidosProdutos: PedidoProduto[];
+  @OneToMany(() => PedidoProduto, (pedidoProduto) => pedidoProduto.produto)
+  pedidosProdutos: PedidoProduto[];
 }

@@ -8,7 +8,9 @@ import { PedidoService } from './pedido.service';
 import { PedidoController } from './pedido.controller';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Pedido, Cliente, Produto, PedidoProduto])],
+  imports: [
+    TypeOrmModule.forFeature([Pedido, Cliente, Produto, PedidoProduto]),
+  ],
   controllers: [PedidoController],
   providers: [PedidoService],
 })

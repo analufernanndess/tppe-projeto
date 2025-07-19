@@ -1,0 +1,32 @@
+name: CI - Backend
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.20.8'
+
+      - name: Instalar dependências
+        run: yarn install
+        working-directory: backend
+
+      - name: Build do projeto
+        run: yarn build
+        working-directory: backend
+
+      - name: Rodar Lint
+        run: yarn lint
+        working-directory: backend

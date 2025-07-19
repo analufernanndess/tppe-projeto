@@ -16,6 +16,7 @@ describe.skip('AppController', () => {
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       expect(appController.getHello()).toBe('Hello World!');
     });
   });

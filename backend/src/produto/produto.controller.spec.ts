@@ -13,6 +13,7 @@ describe('ProdutoController', () => {
   });
 
   it('should be defined', () => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     expect(controller).toBeDefined();
   });
 });
