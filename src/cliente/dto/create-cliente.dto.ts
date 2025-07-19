@@ -3,27 +3,32 @@ import { IsEnum, IsNotEmpty, IsString, IsEmail } from 'class-validator';
 import { TipoCliente } from '../enum/tipo-cliente.enum';
 
 export class CreateClienteDto {
-    @ApiProperty()
-    @IsNotEmpty()
-    @IsString()
-    nome: string;
+  @ApiProperty()
+  @IsNotEmpty()
+  @IsString()
+  nome: string;
 
-    @ApiProperty()
-    @IsNotEmpty()
-    @IsString()
-    telefone: string;
+  @ApiProperty()
+  @IsNotEmpty()
+  @IsString()
+  telefone: string;
 
-    @ApiProperty()
-    @IsNotEmpty()
-    @IsEmail()
-    email: string;
+  @ApiProperty()
+  @IsNotEmpty()
+  @IsEmail()
+  email: string;
 
-    @ApiProperty()
-    @IsNotEmpty()
-    @IsString()
-    endereco: string;
+  @ApiProperty()
+  @IsNotEmpty()
+  @IsString()
+  endereco: string;
 
-    @ApiProperty({ enum: TipoCliente, description: 'F (física) ou J (jurídica)' })
-    @IsEnum(TipoCliente, { message: 'Tipo deve ser F (física) ou J (jurídica)' })
-    tipo: TipoCliente;
+  @ApiProperty({ enum: TipoCliente, description: 'F (física) ou J (jurídica)' })
+  @IsEnum(TipoCliente, { message: 'Tipo deve ser F (física) ou J (jurídica)' })
+  tipo: TipoCliente;
+
+  @ApiProperty()
+  @IsNotEmpty()
+  @IsString()
+  documento: string;
 }
